@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+
+  </head>
+  <body>
+
+    <form action="/admin/login" style="border:1px solid #ccc" method="post">
+       <div class="container">
+         <label for="email"><b>user</b></label>
+         <input type="text" placeholder="Enter user" name="user" value="admin" required>
+         <label for="psw"><b>Password</b></label>
+         <input type="password" placeholder="Enter Password" name="password" value="12345678" required>
+
+
+         <div class="clearfix">
+           <button type="submit" class="signupbtn">Sign In</button>
+         </div>
+       </div>
+     </form>
+  </body>
+</html>

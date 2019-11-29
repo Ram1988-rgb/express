@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Edit</title>
+
+  </head>
+  <body>
+    <a href="/admin/logout">Logout</a>
+    <a href="/admin/list_user">Manage User</a>
+    <form action="/admin/user/edit/<%=data.id%>" style="border:1px solid #ccc" method="post">
+       <div class="container">
+         <label for="email"><b>Name</b></label>
+         <input type="text" placeholder="Enter Name" name="name" value="<%=data.name%>" required>
+
+         <label for="email"><b>Email</b></label>
+         <input type="text" placeholder="Enter Email" name="email" value="<%=data.email%>" required>
+
+         <label for="psw"><b>Password</b></label>
+         <input type="text" placeholder="Enter Password" name="password" value="<%=data.password%>" required>
+
+         <label for="psw"><b>Phone</b></label>
+         <input type="password" placeholder="Enter Phone" name="phone" value="<%=data.phone%>" required>
+         <div class="clearfix">
+           <button type="submit" class="signupbtn">Update</button>
+         </div>
+       </div>
+     </form>
+  </body>
+</html>

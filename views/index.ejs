@@ -1,0 +1,31 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+
+  </head>
+  <body>
+    <a href="/admin/logout">Logout</a>
+    <a href="/admin/list_user">Manage User</a>
+    <form action="/admin/signup" style="border:1px solid #ccc" method="post">
+       <div class="container">
+         <label for="email"><b>Name</b></label>
+         <input type="text" placeholder="Enter Name" name="name" value="abc" required>
+
+         <label for="email"><b>Email</b></label>
+         <input type="text" placeholder="Enter Email" name="email" value="abc@gmail.com" required>
+
+         <label for="psw"><b>Password</b></label>
+         <input type="password" placeholder="Enter Password" name="psw" value="12345678" required>
+
+         <label for="psw"><b>Phone</b></label>
+         <input type="password" placeholder="Enter Phone" name="phone" value="9874561230" required>
+         <div class="clearfix">
+           <button type="submit" class="signupbtn">Sign Up</button>
+         </div>
+       </div>
+     </form>
+  </body>
+</html>
